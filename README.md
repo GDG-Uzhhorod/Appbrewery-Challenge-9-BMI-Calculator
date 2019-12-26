@@ -1,16 +1,19 @@
 # flutter_bmi_calculator
 
-A new Flutter application.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+[Appbrewery](https://www.appbrewery.co/): The Complete Flutter Development Bootcamp Using Dart 
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![Finished App](https://github.com/GDG-Uzhhorod/Appbrewery-Challenge-8-Boss-Destini/blob/master/photo_2019-12-27_00-49-43.jpg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+Sample by [GDG Uzhhorod](https://github.com/GDG-Uzhhorod) / [BruSD](https://github.com/BruSD)
+
+[Check curse ->](https://www.appbrewery.co/courses/548873/)
+
+
+![App Brewery Banner](https://github.com/londonappbrewery/Images/blob/master/AppBreweryBanner.png)
+![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+
