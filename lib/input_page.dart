@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bmi_calculator/calculator_braine.dart';
 import 'package:flutter_bmi_calculator/custom/bottom_button.dart';
 import 'package:flutter_bmi_calculator/constants.dart';
 import 'package:flutter_bmi_calculator/custom/icon_content.dart';
@@ -105,9 +106,9 @@ class _InputPageState extends State<InputPage> {
                       thumbColor: Color(0xFFEB1555),
                       overlayColor: Color(0x29EB1555),
                       thumbShape:
-                      RoundSliderThumbShape(enabledThumbRadius: 15.0),
+                          RoundSliderThumbShape(enabledThumbRadius: 15.0),
                       overlayShape:
-                      RoundSliderOverlayShape(overlayRadius: 30.0)),
+                          RoundSliderOverlayShape(overlayRadius: 30.0)),
                   child: Slider(
                     onChanged: (value) {
                       setState(() {
@@ -213,15 +214,24 @@ class _InputPageState extends State<InputPage> {
             ],
           ),
         ),
-        BottomButton(buttonTitle: 'CALCULATE', onTap: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => ResultPage()));
-        },)
+        BottomButton(
+          buttonTitle: 'CALCULATE',
+          onTap: () {
+            CalculatorBrain calc =
+                CalculatorBrain(height: height, weight: weight);
+
+
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => ResultPage(
+                          bmiResult: calc.calculateBMI(),
+                          interpretetion: calc.getInterpretation(),
+                          resultText: calc.getResults(),
+                        )));
+          },
+        )
       ],
     );
   }
 }
-
-
-
-

@@ -4,6 +4,15 @@ import 'package:flutter_bmi_calculator/custom/bottom_button.dart';
 import 'package:flutter_bmi_calculator/custom/reusable_card.dart';
 
 class ResultPage extends StatelessWidget {
+  ResultPage(
+      {@required this.bmiResult,
+      @required this.interpretetion,
+      @required this.resultText});
+
+  final String bmiResult;
+  final String resultText;
+  final String interpretetion;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,15 +47,15 @@ class ResultPage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
                 Text(
-                  'Normal',
+                  resultText.toUpperCase(),
                   style: kResultTextStyle,
                 ),
                 Text(
-                  '26.5',
+                  bmiResult,
                   style: kBMITextStyle,
                 ),
                 Text(
-                  'Your BMI resul a qite low, You need eat more ',
+                  interpretetion,
                   textAlign: TextAlign.center,
                   style: kBodyTextStyle,
                 ),
